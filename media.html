@@ -23,21 +23,40 @@
         <h2>Video Showcase</h2>
         
         <!-- First video - missing controls and fallback -->
-        <video src="media/sample1.mp4" width="640" height="360"></video>
+        <video src="media/sample1.mp4" width="640" height="360" controls>
+            <source src="media/sample1.mp4" type="video/mp4">
+            Your browser is not supported
+        </video>
         
         <!-- Second video missing entirely -->
+        <video src="media/sample2.mp4" width="640" height="360" controls>
+            <source src="media/sample2.mp4" type="video/mp4">
+            Your browser is not supported
+        </video>
     </section>
     
     <section>
         <h2>Audio Sample</h2>
         <!-- Audio element missing completely -->
         <p>Listen to our audio production quality.</p>
+        <audio controls>
+            <source src="media/sample-audio.mp3" type="audio/mpeg">
+            Your browser is not supported
+        </audio>
     </section>
     
     <section>
         <h2>Location</h2>
         <!-- iframe missing completely -->
         <p>Visit our studio at 123 Media Street</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?..."
+            width="500" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy">
+        </iframe>
     </section>
     
     <section>
