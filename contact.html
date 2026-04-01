@@ -24,16 +24,36 @@
         
         <!-- Form with multiple errors -->
         <form action="/submit" method="post">
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="email" placeholder="Email">
-            <input type="text" name="phone" placeholder="Phone">
-            <textarea name="message" placeholder="Message"></textarea>
+            <fieldset>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Name" required>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+
+                <label for="phone">Phone:</label>
+                <input id="phone" type="tel" name="phone" placeholder="Phone" required>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="subscribe"> Subscribe to newsletter
+
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option>Video Production</option>
+                    <option>Audio Recording</option>
+                    <option>Media Editing</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+            </fieldset>
             
             <!-- Missing: labels, proper input types (email, tel), validation attributes -->
             <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
             <!-- Missing: fieldset for grouping -->
             
-            <button>Submit</button>
+            <option>Audio Recording</option>
         </form>
     </main>
     
