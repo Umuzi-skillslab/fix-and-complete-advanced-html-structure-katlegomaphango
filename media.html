@@ -1,50 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="top">
+    <header class="top">
         <h1>Media Gallery</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div>
+    <section>
         <h2>Video Showcase</h2>
         
         <!-- First video - missing controls and fallback -->
         <video src="media/sample1.mp4" width="640" height="360"></video>
         
         <!-- Second video missing entirely -->
-    </div>
+    </section>
     
-    <div>
+    <section>
         <h2>Audio Sample</h2>
         <!-- Audio element missing completely -->
         <p>Listen to our audio production quality.</p>
-    </div>
+    </section>
     
-    <div>
+    <section>
         <h2>Location</h2>
         <!-- iframe missing completely -->
         <p>Visit our studio at 123 Media Street</p>
-    </div>
+    </section>
     
-    <div>
+    <section>
         <h2>Client Testimonials</h2>
-        <img src="images/client1.jpg">
-        <img src="images/client2.jpg">
+        <figure>
+            <img src="images/client1.jpg" alt="Client smiling">
+            <figcaption>Client testimonial</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/client2.jpg" alt="Client smiling">
+            <figcaption>Client testimonial</figcaption>
+        </figure>
         <!-- Missing figure/figcaption semantic markup -->
-    </div>
+    </section>
     
-    <div class="bottom">
+    <footer class="bottom">
         <p>Email: contact@mediaproduction.com</p>
-    </div>
+    </footer>
 </body>
 </html>
