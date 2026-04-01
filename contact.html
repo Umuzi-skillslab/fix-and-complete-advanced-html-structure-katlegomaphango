@@ -35,18 +35,31 @@
                 <input id="phone" type="tel" name="phone" placeholder="Phone" required>
             </fieldset>
             <fieldset>
-                <input type="checkbox" name="subscribe"> Subscribe to newsletter
+                <input type="radio" id="full" name="production" value="full">
+                <label for="full">Full production</label>
 
+                <input type="radio" id="semi" name="production" value="semi">
+                <label for="semi">Semi production</label>
+
+                <input type="radio" id="editing" name="production" value="editing">
+                <label for="editing">Editing only</label>
+            </fieldset>
+            <fieldset>
                 <label for="service">Service:</label>
                 <select id="service" name="service" required>
                     <option>Video Production</option>
                     <option>Audio Recording</option>
                     <option>Media Editing</option>
                 </select>
+
+                <input type="checkbox" name="subscribe"> Subscribe to newsletter
             </fieldset>
             <fieldset>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <textarea id="message" name="message" placeholder="Message" required
+                    minlength="10" maxlength="200"
+                >
+                </textarea>
             </fieldset>
             
             <!-- Missing: labels, proper input types (email, tel), validation attributes -->
