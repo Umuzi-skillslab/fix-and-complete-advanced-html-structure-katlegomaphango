@@ -18,14 +18,56 @@ body {
 }
 
 /* Navigation - not using flexbox, poor styling */
-.nav {
+li {
+    list-style: none;
+}
+
+nav {
     margin-top: 10px;
 }
 
-.nav a {
+nav a {
     color: white;
     margin-right: 15px;
     text-decoration: none;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: right;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: pink;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: red;
+    }
+
+    .top {
+        padding: 10px;
+    }
+
+    .top h1 {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 5px;
+    }
+
+    nav a {
+        margin-right: 0;
+    }
+
+    nav > ul {
+        justify-content:space-evenly;
+        padding-left: 0;
+    }
 }
 
 /* Missing: pseudo-classes for hover effects */
@@ -44,6 +86,11 @@ body {
 
 .content {
     padding: 40px 20px;
+}
+
+.content_cards {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Missing: text effects (shadows, gradients) */
