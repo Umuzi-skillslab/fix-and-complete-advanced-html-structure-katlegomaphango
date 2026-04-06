@@ -280,6 +280,32 @@ input[type="checkbox"] {
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
+.video-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.video-flex figure {
+    max-width: 560px;
+    width: 100%;
+}
+
+video,
+audio {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.location-map iframe {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
 @media only screen and (max-width: 768px) {
     body {
         background-color: pink;
