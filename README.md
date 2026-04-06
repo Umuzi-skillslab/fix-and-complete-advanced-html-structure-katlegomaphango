@@ -204,3 +204,46 @@ The project transformed from a broken, inaccessible starter into a production-re
 4. **CSS architecture prevents chaos** – Organizing by function (layout → components → utilities) made debugging faster
 
 The process reinforced that good front-end development isn't just about making things look pretty – it's about building resilient, accessible experiences that work everywhere.
+
+## How to View Your Website Locally
+
+### Prerequisites
+- A modern web browser (Chrome 90+, Firefox 88+, Safari 14+, or Edge 90+)
+- No server or internet connection required for basic functionality (except external media CDN links)
+
+### Method 1: Direct File Opening (Recommended)
+
+1. **Create a project folder** on your computer:
+
+2. **Save all files** into this folder with the exact names:
+
+3. **Open the website** using any of these methods:
+- **Double-click** `index.html` – opens in your default browser
+- **Right-click** → "Open with" → Choose your browser
+- **Drag and drop** the HTML file into an open browser window
+
+4. **Navigate** using the navigation menu to access all four pages:
+- Home (`index.html`)
+- About (`about.html`)
+- Media Gallery (`media.html`)
+- Contact (`contact.html`)
+
+### Method: Using Live Server (For Development)
+
+If you have Visual Studio Code installed:
+
+1. Install the **Live Server** extension by Ritwick Dey
+2. Open your project folder in VS Code
+3. Right-click on `index.html` and select **"Open with Live Server"**
+4. The site will automatically open at `http://127.0.0.1:5500`
+
+```
+MediaFlowPro-Website/
+│
+├── index.html          # Homepage with hero section and service cards
+├── about.html          # Team info, services, and portfolio grid
+├── media.html          # Video showcase, audio player, iframe map, client gallery
+├── contact.html        # Advanced form with validation
+├── styles.css          # All styling, animations, flexbox, grid
+│
+└── (optional) images/  # Not required - using placeholder images from CDN
