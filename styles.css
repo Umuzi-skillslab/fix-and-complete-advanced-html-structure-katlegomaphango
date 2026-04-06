@@ -426,6 +426,15 @@ form input[type="email"] {
     .content_cards {
         display: block;
     }
+
+    .grid-gallery,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
 }
 
 /* Missing: pseudo-classes for hover effects */
