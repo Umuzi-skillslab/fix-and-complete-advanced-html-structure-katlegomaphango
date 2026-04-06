@@ -433,20 +433,3 @@ form input[type="email"] {
         font-size: 1.6rem;
     }
 }
-
-/* Missing: pseudo-classes for hover effects */
-/* Missing: combination selectors */
-/* Missing: advanced selector types (attribute, child, etc) */
-/* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
-/* Missing: CSS Grid layout (requirement: 1+ grid layout) */
-/* Missing: text effects (shadows, gradients) */
-/* Missing: transforms */
-/* Missing: transitions */
-/* Missing: keyframe animations */
-/* Video and audio styling missing */
-/* Form styling incomplete */
-/* Missing: responsive design with media queries */
-/* Missing: advanced layout techniques */
-/* Code quality issues: poor naming, no comments, inconsistent spacing */
-/* Only using 3 selector types (element, class) - needs 5+ */
-/* No pseudo-classes used - needs 5+ */
