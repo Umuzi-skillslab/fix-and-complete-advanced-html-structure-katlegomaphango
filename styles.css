@@ -306,6 +306,26 @@ audio {
     display: block;
 }
 
+.bottom {
+    background: #111827;
+    color: #e2e8f0;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bottom a {
+    color: #ffcc66;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
     body {
         background-color: pink;
