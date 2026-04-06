@@ -192,6 +192,94 @@ figcaption {
     color: #2d3e50;
 }
 
+.contact-main {
+    min-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.contact-form fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 24px;
+    padding: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.8rem;
+    background: white;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label,
+.label-like {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 14px;
+    border: 1px solid #cdb5e1;
+    transition: all 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.3rem;
+}
+
+.submit-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.submit-btn:hover {
+    background: #059669;
+    transform: scale(1.02) translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
 @media only screen and (max-width: 768px) {
     body {
         background-color: pink;
