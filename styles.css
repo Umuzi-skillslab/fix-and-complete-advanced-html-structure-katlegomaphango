@@ -25,13 +25,23 @@ h1, h2, h3 {
 }
 
 .top {
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #111827, #1f2937);
     color: white;
-    padding: 20px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .top h1 {
-    margin: 0;
+    font-size: 1.6rem;
+    transition: transform 0.2s;
+}
+
+.top h1:hover {
+    transform: scale(1.02);
 }
 
 /* Navigation - not using flexbox, poor styling */
