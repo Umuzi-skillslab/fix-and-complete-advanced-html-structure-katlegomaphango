@@ -12,6 +12,18 @@ body {
     transition: background 0.3s ease;
 }
 
+.glow-txt {
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffd966, #ffaa33);
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+}
+
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+}
+
 .top {
     background-color: #1a1a1a;
     color: white;
