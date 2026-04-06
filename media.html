@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video, audio and interactive media showcase from our studio.">
+
     <title>Media Gallery</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -10,7 +12,7 @@
     <header class="top">
         <h1>Media Gallery</h1>
         <nav class="nav">
-            <ul>
+            <ul class="nav-flex">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="media.html">Media</a></li>
@@ -19,62 +21,90 @@
         </nav>
     </header>
     
-    <section>
+    <section class="video-showcase">
         <h2>Video Showcase</h2>
         
         <!-- First video - missing controls and fallback -->
-        <video src="media/sample1.mp4" width="640" height="360" controls>
-            <source src="media/sample1.mp4" type="video/mp4">
-            Your browser is not supported
-        </video>
-        
-        <!-- Second video missing entirely -->
-        <video src="media/sample2.mp4" width="640" height="360" controls>
-            <source src="media/sample2.mp4" type="video/mp4">
-            Your browser is not supported
-        </video>
+        <div class="video-flex">
+            <figure>
+                <video width="560" height="315" controls poster="https://picsum.photos/id/30/560/315">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Please update your browser.
+                </video>
+                <figcaption>Showreel 2025 — Action & Storytelling</figcaption>
+            </figure>
+            <figure>
+                <video width="560" height="315" controls poster="https://picsum.photos/id/96/560/315">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Commercial sample: "Drive the Future"</figcaption>
+            </figure>
+        </div>
     </section>
     
-    <section>
-        <h2>Audio Sample</h2>
-        <!-- Audio element missing completely -->
-        <p>Listen to our audio production quality.</p>
-        <audio controls>
-            <source src="media/sample-audio.mp3" type="audio/mpeg">
-            Your browser is not supported
-        </audio>
+    <section class="audio-section">
+        <h2>Studio Audio Sample</h2>
+        <div class="audio-container">
+            <p>Listen to our professional mixing & mastering quality:</p>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. Download sample.
+            </audio>
+        </div>
     </section>
     
-    <section>
-        <h2>Location</h2>
-        <!-- iframe missing completely -->
-        <p>Visit our studio at 123 Media Street</p>
+    <section class="location-map">
+        <h2>Our Studio Location</h2>
         <iframe 
-            src="https://www.google.com/maps/embed?..."
-            width="500" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7ae6b%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1644274920000!5m2!1sen!2sus" 
+            width="100%" 
             height="350" 
-            style="border:0;" 
-            allowfullscreen 
-            loading="lazy">
+            style="border:0; border-radius: 16px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Google Maps showing studio location">
         </iframe>
+        <p>123 Media Street, Creative District — visit us or schedule a meeting.</p>
     </section>
     
-    <section>
-        <h2>Client Testimonials</h2>
-        <figure>
-            <img src="images/client1.jpg" alt="Client smiling">
-            <figcaption>Client testimonial</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/client2.jpg" alt="Client smiling">
-            <figcaption>Client testimonial</figcaption>
-        </figure>
+    <section class="testimonials-grid">
+        <h2>Happy Clients</h2>
+        <div class="client-grid">
+            <figure>
+                <img src="https://picsum.photos/id/64/150/150" alt="Client portrait 1" loading="lazy">
+                <figcaption>⭐ "Top-tier production quality!" — Sarah J.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/id/65/150/150" alt="Client portrait 2" loading="lazy">
+                <figcaption>🎧 "Best audio engineers in the city." — Mike R.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/id/91/150/150" alt="Client portrait 3" loading="lazy">
+                <figcaption>📽️ "Delivered ahead of schedule!" — Laura K.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/id/12/150/150" alt="Client portrait 4" loading="lazy">
+                <figcaption>🚀 "Brought our brand story to life." — James C.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/id/169/150/150" alt="Client portrait 5" loading="lazy">
+                <figcaption>✨ "Exceptional post-production work." — Eva M.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/id/26/150/150" alt="Client portrait 6" loading="lazy">
+                <figcaption>🏆 "Award-worthy creativity!" — Daniel P.</figcaption>
+            </figure>
+        </div>
         <!-- Missing figure/figcaption semantic markup -->
     </section>
     
     <footer class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
+        <div class="footer-flex">
+            <p>📧 Email: <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a></p>
+            <p>🎬 Follow us for exclusive behind-the-scenes</p>
+        </div>
     </footer>
 </body>
 </html>
