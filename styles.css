@@ -99,14 +99,9 @@ h1, h2, h3 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* .content {
+.content {
     padding: 40px 20px;
 }
-
-.content_cards {
-    display: flex;
-    justify-content: space-around;
-} */
 
 .services-flex,
 .about-flex-container {
@@ -280,6 +275,11 @@ input[type="checkbox"] {
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
+.video-showcase h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .video-flex {
     display: flex;
     flex-wrap: wrap;
@@ -369,6 +369,10 @@ form input[type="email"] {
         flex-direction: column;
         text-align: center;
         gap: 0.8rem;
+    }
+
+    .contact-main {
+        min-width: 300px;
     }
 
     .footer-flex {
