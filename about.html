@@ -1,49 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about our expert media production team and premium services.">
+
     <title>About Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="top">
+    <header class="top">
         <h1>About Our Services</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+        <nav class="nav">
+            <ul class="nav-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div>
-        <h2>Our Team</h2>
-        <p>We are a team of experienced media professionals dedicated to creating high-quality content.</p>
-    </div>
+    <section class="hero">
+        <h2>Our Creative Team</h2>
+        <p>We are a team of experienced media professionals dedicated to creating high-quality content that resonates.</p>
+    </section>
     
-    <div>
-        <h2>Services</h2>
+    <main class="services-about content">
+        <h2>Premium Services</h2>
         <!-- Flexbox layout should be here but using basic divs -->
-        <div>
-            <h3>Video Production</h3>
-            <p>Professional video creation for corporate and creative projects.</p>
+        <div class="about-flex-container">
+            <article class="about-card">
+                <h3>🎬 Video Production</h3>
+                <p>Professional video creation for corporate and creative projects — from scripting to final color grading.</p>
+            </article>
+            <article class="about-card">
+                <h3>🎧 Audio Recording</h3>
+                <p>Studio-quality audio production, noise reduction, and immersive mixing.</p>
+            </article>
+            <article class="about-card">
+                <h3>✂️ Media Editing</h3>
+                <p>Advanced editing, VFX, and motion design to elevate your story.</p>
+            </article>
         </div>
-        <div>
-            <h3>Audio Recording</h3>
-            <p>Studio-quality audio production and editing services.</p>
-        </div>
-        <!-- Missing third service -->
-    </div>
+    </main>
     
-    <div>
-        <h2>Portfolio</h2>
+    <section class="portfolio-grid-section">
+        <h2>Recent Work Gallery</h2>
         <!-- Grid gallery missing - just basic layout -->
-        <img src="images/work1.jpg">
-        <img src="images/work2.jpg">
-        <img src="images/work3.jpg">
-    </div>
+        <div class="portfolio-grid">
+            <figure>
+                <img src="./images/urban.jpg" alt="Project Alpha">
+                <figcaption>Documentary: "Urban Rhythms"</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/ecodrive.jpg" alt="Project Beta">
+                <figcaption>Commercial: EcoDrive</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/neon.jpg" alt="Project Gamma">
+                <figcaption>Music video: Neon Lights</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/tech.jpg" alt="Project Delta">
+                <figcaption>Corporate: TechForward</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/podcast.jpg" alt="Project Epsilon">
+                <figcaption>Podcast: Creative Talks</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/animation.jpg" alt="Project Zeta">
+                <figcaption>Animation: Explainer video</figcaption>
+            </figure>
+        </div>
+    </section>
     
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+    <footer class="bottom">
+        <div class="footer-flex">
+            <p>📧 Email: <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a></p>
+            <p>📍 Location: 123 Media Street, Creative District</p>
+        </div>
+    </footer>
 </body>
 </html>

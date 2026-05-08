@@ -1,50 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video, audio and interactive media showcase from our studio.">
+
     <title>Media Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="top">
+    <header class="top">
         <h1>Media Gallery</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+        <nav class="nav">
+            <ul class="nav-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div>
+    <section class="video-showcase">
         <h2>Video Showcase</h2>
         
         <!-- First video - missing controls and fallback -->
-        <video src="media/sample1.mp4" width="640" height="360"></video>
-        
-        <!-- Second video missing entirely -->
-    </div>
+        <div class="video-flex">
+            <figure>
+                <video width="560" height="315" controls>
+                    <source src="./media/video-sample1.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Please update your browser.
+                </video>
+                <figcaption>Showreel 2025 — Action & Storytelling</figcaption>
+            </figure>
+            <figure>
+                <video width="560" height="315" controls>
+                    <source src="./media/video-sample2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Commercial sample: "Drive the Future"</figcaption>
+            </figure>
+        </div>
+    </section>
     
-    <div>
-        <h2>Audio Sample</h2>
-        <!-- Audio element missing completely -->
-        <p>Listen to our audio production quality.</p>
-    </div>
+    <section class="audio-section">
+        <h2>Studio Audio Sample</h2>
+        <div class="audio-container">
+            <p>Listen to our professional mixing & mastering quality:</p>
+            <audio controls>
+                <source src="./media/audio-sample.mp3" type="audio/mpeg">
+                <source src="./media/audio-sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. Download sample.
+            </audio>
+        </div>
+    </section>
     
-    <div>
-        <h2>Location</h2>
-        <!-- iframe missing completely -->
-        <p>Visit our studio at 123 Media Street</p>
-    </div>
+    <section class="location-map">
+        <h2>Our Studio Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7ae6b%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1644274920000!5m2!1sen!2sus" 
+            width="100%" 
+            height="350" 
+            style="border:0; border-radius: 16px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Google Maps showing studio location">
+        </iframe>
+        <p>123 Media Street, Creative District — visit us or schedule a meeting.</p>
+    </section>
     
-    <div>
-        <h2>Client Testimonials</h2>
-        <img src="images/client1.jpg">
-        <img src="images/client2.jpg">
+    <section class="testimonials-grid">
+        <h2>Happy Clients</h2>
+        <div class="client-grid">
+            <figure>
+                <img src="./images/woman.jpg" alt="Client portrait 1" loading="lazy">
+                <figcaption>⭐ "Top-tier production quality!" — Sarah J.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/sunset.jpg" alt="Client portrait 2" loading="lazy">
+                <figcaption>🎧 "Best audio engineers in the city." — Mike R.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/comedit.jpg" alt="Client portrait 3" loading="lazy">
+                <figcaption>📽️ "Delivered ahead of schedule!" — Laura K.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/beach.jpg" alt="Client portrait 4" loading="lazy">
+                <figcaption>🚀 "Brought our brand story to life." — James C.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/dogs.jpg" alt="Client portrait 5" loading="lazy">
+                <figcaption>✨ "Exceptional post-production work." — Eva M.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/vidprod.jpg" alt="Client portrait 6" loading="lazy">
+                <figcaption>🏆 "Award-worthy creativity!" — Daniel P.</figcaption>
+            </figure>
+        </div>
         <!-- Missing figure/figcaption semantic markup -->
-    </div>
+    </section>
     
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+    <footer class="bottom">
+        <div class="footer-flex">
+            <p>📧 Email: <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a></p>
+            <p>🎬 Follow us for exclusive behind-the-scenes</p>
+        </div>
+    </footer>
 </body>
 </html>

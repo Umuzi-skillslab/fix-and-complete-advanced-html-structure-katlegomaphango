@@ -1,33 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional media production services: video, audio, and multimedia solutions for businesses.">
+    <meta name="author" content="Media Production Co.">
+
     <title>Media Production</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="top">
+    <header class="top">
         <h1>Media Production Company</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+        <nav class="nav">
+            <ul class="nav-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div class="hero">
-        <h2>Professional Media Production Services</h2>
-        <p>We create stunning visual content for your business needs.</p>
-    </div>
+    <section class="hero">
+        <h2 class="glow-txt">Professional Media Production Services</h2>
+        <p>We create stunning visual content for your business needs, from concept to final cut.</p>
     
-    <div class="content">
+        <a href="contact.html" class="cta-btn">Start your project</a>
+    </section>
+    
+    <main class="content">
         <h2>What We Do</h2>
         <p>Video production, audio recording, and multimedia solutions for businesses of all sizes.</p>
-    </div>
+        
+        <div class="content_cards services-flex">
+            <article class="service-card">
+                <div class="icon">🎥</div>
+                <h3>Video Production</h3>
+                <p>Cinematic storytelling, commercials, and corporate videos.</p>
+            </article>
+            <article class="service-card">
+                <div class="icon">🎙️</div>
+                <h3>Audio Recording</h3>
+                <p>Podcast, voiceover, and studio-quality mixing.</p>
+            </article>
+            <article class="service-card">
+                <div class="icon">✨</div>
+                <h3>Multimedia Solutions</h3>
+                <p>Motion graphics, animation, and post-production.</p>
+            </article>
+        </div>
+    </main>
+
+    <section class="featured-grid">
+        <h2>Featured Portfolio</h2>
+        <div class="grid-gallery">
+            <figure>
+                <img src="./images/docu.jpg" alt="Work sample 1">
+                <figcaption>Corporate documentary</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/vidprod.jpg" alt="Work sample 2">
+                <figcaption>Music video production</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/comedit.jpg" alt="Work sample 3">
+                <figcaption>Commercial editing</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/behind.jpg" alt="Work sample 4">
+                <figcaption>Behind the scenes</figcaption>
+            </figure>
+        </div>
+    </section>
     
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-        <p>Phone: 555-0123</p>
-    </div>
+    <footer class="bottom">
+        <div class="footer-flex">
+            <p>📧 Email: <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a></p>
+            <p>📞 Phone: 555-0123</p>
+            <p>© 2025 MediaFlow Pro — Storytellers at heart</p>
+        </div>
+    </footer>
 </body>
 </html>

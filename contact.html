@@ -1,40 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact our media production team. Request a quote or consultation.">
+
     <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="top">
+    <header class="top">
         <h1>Contact Us</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+        <nav class="nav">
+            <ul class="nav-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div>
+    <main class="contact-main">
         <h2>Get In Touch</h2>
+        <p>Let’s bring your vision to life. Fill out the form below and we’ll get back to you within 24h.</p>
         
         <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
+        <form action="" method="post" class="contact-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="fullname">Full name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="2" maxlength="60">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" placeholder="hello@domain.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" pattern="[0-9+\-\s]+">
+                </div>
+                <div class="form-group">
+                    <label for="project-date">Preferred start date</label>
+                    <input type="date" id="project-date" name="project-date" min="2025-04-10">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Production details</legend>
+                <div class="form-group">
+                    <label for="service-type">Service type *</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">-- Select a service --</option>
+                        <option>Video Production</option>
+                        <option>Audio Recording</option>
+                        <option>Media Editing</option>
+                        <option>Full production package</option>
+                    </select>
+                </div>
+
+                <div class="form-group radio-group">
+                    <span class="label-like">Production scale *</span>
+                    <label><input type="radio" name="production" value="full" required> Full production</label>
+                    <label><input type="radio" name="production" value="semi"> Semi production</label>
+                    <label><input type="radio" name="production" value="editing"> Editing only</label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> Subscribe to monthly creative insights</label>
+                    <label><input type="checkbox" name="callback" value="request"> Request a callback</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Project message</legend>
+                <div class="form-group">
+                    <label for="message">Tell us about your project *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe your vision, timeline, and goals..." required minlength="10" maxlength="400"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Estimated budget (USD)</label>
+                    <input type="number" id="budget" name="budget" min="500" max="50000" step="500" placeholder="e.g., 5000">
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Send Inquiry ✨</button>
         </form>
-    </div>
+    </main>
     
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+    <footer class="bottom">
+        <div class="footer-flex">
+            <p>📧 Email: <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a></p>
+            <p>📞 Phone: 555-0123</p>
+        </div>
+    </footer>
 </body>
 </html>
