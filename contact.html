@@ -31,19 +31,28 @@
                 <legend>Personal Information</legend>
                 <div class="form-group">
                     <label for="fullname">Full name *</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="2" maxlength="60">
+                    <input 
+                        type="text" 
+                        id="fullname" 
+                        name="fullname" 
+                        placeholder="John Doe" 
+                        required 
+                        minlength="2" 
+                        maxlength="60"
+                        aria-describedby="fullname-hint fullname-error"
+                    >
                 </div>
                 <div class="form-group">
                     <label for="email">Email address *</label>
-                    <input type="email" id="email" name="email" placeholder="hello@domain.com" required>
+                    <input aria-describedby="email-error" type="email" id="email" name="email" placeholder="hello@domain.com" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" pattern="[0-9+\-\s]+">
+                    <input aria-describedby="phone-hint phone-error" type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" pattern="[0-9+\-\s]+">
                 </div>
                 <div class="form-group">
                     <label for="project-date">Preferred start date</label>
-                    <input type="date" id="project-date" name="project-date" min="2025-04-10">
+                    <input aria-describedby="date-error" type="date" id="project-date" name="project-date" min="2025-04-10">
                 </div>
             </fieldset>
 
@@ -51,7 +60,7 @@
                 <legend>Production details</legend>
                 <div class="form-group">
                     <label for="service-type">Service type *</label>
-                    <select id="service-type" name="service-type" required>
+                    <select aria-describedby="service-error" id="service-type" name="service-type" required>
                         <option value="">-- Select a service --</option>
                         <option>Video Production</option>
                         <option>Audio Recording</option>
@@ -77,11 +86,11 @@
                 <legend>Project message</legend>
                 <div class="form-group">
                     <label for="message">Tell us about your project *</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Describe your vision, timeline, and goals..." required minlength="10" maxlength="400"></textarea>
+                    <textare aria-describedby="message-hint message-error" id="message" name="message" rows="5" placeholder="Describe your vision, timeline, and goals..." required minlength="10" maxlength="400"></textare>
                 </div>
                 <div class="form-group">
                     <label for="budget">Estimated budget (USD)</label>
-                    <input type="number" id="budget" name="budget" min="500" max="50000" step="500" placeholder="e.g., 5000">
+                    <input aria-describedby="budget-hint budget-error" type="number" id="budget" name="budget" min="500" max="50000" step="500" placeholder="e.g., 5000">
                 </div>
             </fieldset>
 
