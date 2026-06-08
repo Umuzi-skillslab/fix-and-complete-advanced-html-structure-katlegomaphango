@@ -188,7 +188,9 @@ figcaption {
 }
 
 .contact-main {
-    min-width: 900px;
+    /* min-width: 900px; */
+    max-width: 100%;
+    width: 100%;
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
