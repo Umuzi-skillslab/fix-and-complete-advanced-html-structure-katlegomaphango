@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #fefefe;
     color: #1f2937;
     line-height: 1.5;
@@ -17,6 +17,7 @@ body {
     background: linear-gradient(135deg, #ffd966, #ffaa33);
     background-clip: text;
     -webkit-background-clip: text;
+    color: transparent; /* Ensures gradient text displays properly across all browsers */
     display: inline-block;
 }
 
@@ -44,7 +45,7 @@ h1, h2, h3 {
     transform: scale(1.02);
 }
 
-/* Navigation - not using flexbox, poor styling */
+/* Navigation */
 .nav-flex {
     display: flex;
     gap: 1.8rem;
@@ -83,13 +84,13 @@ h1, h2, h3 {
 .cta-btn {
     display: inline-block;
     background: #2563eb;
-    /* color: white; */
+    color: white; 
     padding: 0.75rem 1.8rem;
     border-radius: 40px;
     text-decoration: none;
     margin-top: 1.5rem;
     transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-    box-shadow: 0 4px 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-btn:hover {
@@ -128,7 +129,7 @@ h1, h2, h3 {
 .about-card:hover {
     transform: translateY(-8px) rotate(0.5deg);
     box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.15);
-    border-color: #ffaa3340;
+    border-color: rgba(255, 170, 51, 0.25);
 }
 
 .icon {
@@ -188,7 +189,8 @@ figcaption {
 }
 
 .contact-main {
-    min-width: 900px;
+    max-width: 100%;
+    width: 100%;
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
@@ -327,9 +329,9 @@ audio {
 }
 
 @keyframes softPulse {
-    0% { opacity: 0.6; transform: scale(0.98);}
-    50% { opacity: 1; transform: scale(1);}
-    100% { opacity: 0.6; transform: scale(0.98);}
+    0% { opacity: 0.6; transform: scale(0.98); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.6; transform: scale(0.98); }
 }
 
 .cta-btn {
@@ -360,6 +362,7 @@ form input[type="email"] {
     background-color: #fef9e3;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 768px) {
     .top {
         flex-direction: column;
@@ -389,7 +392,6 @@ form input[type="email"] {
 }
 
 @media only screen and (max-width: 320px) {
-
     .top {
         padding: 10px;
     }
@@ -407,7 +409,7 @@ form input[type="email"] {
     }
 
     nav > ul {
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         padding-left: 0;
     }
 
@@ -416,8 +418,8 @@ form input[type="email"] {
     }
 
     .content {
-        padding: 30ox 15px;
-        text-align: center ;
+        padding: 30px 15px; /* Fixed typo: 30ox -> 30px */
+        text-align: center;
     }
 
     .content_cards {
@@ -431,5 +433,23 @@ form input[type="email"] {
 
     .hero h2 {
         font-size: 1.6rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+    
+    .cta-btn {
+        animation: none !important;
     }
 }
